@@ -3,6 +3,7 @@
     <head> 
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Clube de cachorros fofinhos.">
         <title>Clube Patinhas</title>
     </head>
     <body>
@@ -12,26 +13,49 @@
        <!-- Existem seis níveis de títulos, do h1 ao h6 -->
        <!-- Não se pula ordem:depois de h1, vem h2, depois h3, e assim por diante --> 
        <h2>Como cuidar</h2>
+       <p>Um cachorro saudável precisa de comida certa, água fresca, passeios e carinho.</p>
+
        <h3>Alimentação</h3>
+       <p>Ofereça ração adequada à idade e ao porte do cão e deixe sempre água limpa à disposição.</p>
+
        <p>Escove os dentes <em>só com pasta para cães</em>.</p>
+       <ul>
+               <li>Filhotes comem várias vezes ao dia, em porção pequenas.</li>
+               <li>Adultos costuman comer duas vezes ao dia.</li>
+               <li>Alguns alimentos humanos fazem mal aos cães.</li>
+                 <ul>
+                    <li>Chocolate;</li>
+                    <li>uva e uva-passa;</li>
+                    <li>cebola e alho.</li>
+                 </ul>   
+       </ul>
+     
        <h3>Passeios</h3>
        <p>Filhotes só passeiam <strong>com as vacinas em dia</strong>.</p>
        <!-- A tag p é para parágrafos de texto -->
        <!-- A tag strong é para uso de negrito e em para itálico--> 
+        <p>Passeios são importantes porque gastam energia, fortalece os músculos e ajuda o cão a conviver com outras pessoas e animais.</p>
        <ol>
             <li>Pegar a guia</li>
-            <li>Passear</li>
-            <li>Dar água</li>
+            <li>Passear, de preferência fora dos horários mais quentes</li>
+            <li>Dar água ao voltar para casa</li>
        </ol> 
 
        <h2>Raças</h2>
        <ul>
-            <li>Beagle</li>
-            <li>Poodle</li>
-            <li>Vira-lata</li>
+            <li>Labragordo</li>
+            <li>Resendog</li>
+            <li>Capiroto</li>
        </ul>
        <!-- Lista não ordenada.-->
        <!-- A tag ul abre a lista e li são os elementos desta lista --> 
+
+       <!-- Utilizamos figure quando a imagem que inserimos no website tiver relação direta com um texto dele. por exemplo, em trabalhos que comentam sobre dados estatísticos e, no texto, informam "vide" --->
+       <img src="https://www.shutterstock.com/image-photo/overweight-fat-labrador-retriever-dog-260nw-2667305547.jpg" height="600" width="600">
+       <figure>
+           <figcaption>Este é o labrador mais gordo do mundo.</figcaption>
+       </figure>
+
 
        <dl>
             <dt>Filhote</dt>
@@ -48,6 +72,53 @@
        <!-- O atributo rel="noopener noreferrer" define que, ao clicar no lin e abrir uma nova aba, ele não poderá manipular a aba original(reverse tabnabbing) e impedirá que o site de destino saiba de qual página veio o tráfego original -->
        
       <img src="Caramelo.jpg" alt="um cachorro caramelo,representnte oficial do Brasil."> 
+
+     <h2>Passeios da semana</h2>
+     
+     <table border="1">
+          <tr>
+               <th>Cachorros</th>
+               <th>Raça</th>
+               <th>Passeios</th>
+          </tr>
+          <tr>
+               <td>Rex</td>
+               <td>Labragordo</td>
+               <td>1</td>
+          </tr>
+          <tr>
+               <td>Resendog</td>
+               <td>Resendog</td>
+               <td>10</td>
+          </tr>
+     <table>
+
+     <h2>Entre em contato:</h2>
+
+     <form>
+          <!-- Form abre o formulário-->
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome">
+          <!-- Label é o titulo do campo do formulário-->
+          <!-- input é o espaço criado para você digitar a informação -->  
+          <!-- Atenção para os atributos id e name.O atributo id vai funcionar como um CPF. Isto vai nos ajudar, depois, para encontrar estes elementos no JavaScript. O name é importante quando vamos enviar os dados do formulário para a gravação, pois ele define o 'nome da variavel' que vai armazenar o dado. --> 
+     
+     <label for="email">E-mail:</label>
+     <input type="email" id="email" name="email">
+
+     <label for="mensagem">Mensagem:</label>
+     <textarea id="mensagem" name="mensagem"></textarea>
+    <!-- A tag textarea é o espaço criado para você digitar a informação, mas com mais linhas -->
+     <button type="submit">Enviar</button>
+     <!-- O button type="submit" tem a função de, quando clicado, enviar as inforações do formulário para servidor -->
+     </form>
+
+     <footer>
+          <p>Clube Patinhas - Site crido para fins educacionais. </p>
+          <p>&copy; 2026 - Clube Patinhas. Todos os direitos reservados.</p>
+     </footer>
+     
+     
 
 </body>
 </html>
